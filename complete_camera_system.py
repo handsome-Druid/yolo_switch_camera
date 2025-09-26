@@ -66,7 +66,7 @@ class SmartCameraSystem:
         
         # 加载YOLO模型
         try:
-            self.model = YOLO('yolo11n.pt')
+            self.model = YOLO('yolo12n.pt')
             print("✓ YOLO模型加载成功")
         except Exception as e:
             print(f"❌ YOLO模型加载失败: {e}")
