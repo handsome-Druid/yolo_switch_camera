@@ -13,16 +13,8 @@ import sys
 import os
 import json
 
-# 导入必要的库
-import cv2
-import numpy as np
-import time
-import threading
-import sys
-import os
-import json
-
-# 使用pip安装的ultralytics
+# 添加本地ultralytics路径
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'ultralytics'))
 from ultralytics import YOLO
 
 # 添加相机模块路径
