@@ -1,0 +1,15 @@
+{
+  "network_flip_mode": "vertical",
+  "enable_auto_wb": true,
+  "show_usb_pip": true,
+  "camera_params": {
+    "network_0": {
+      "zoom": 0,
+      "sharpen": 0
+    },
+    "network_1": {
+      "zoom": 0,
+      "sharpen": 0
+    }
+  }
+}
