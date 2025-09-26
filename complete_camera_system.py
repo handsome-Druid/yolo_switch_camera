@@ -645,9 +645,11 @@ class SmartCameraSystem:
                     # 判断是否需要切换相机
                     if self.should_switch_camera(position):
                         if position == "left" and len(self.network_cameras) > 0:
-                            self.switch_camera("network_0", f"(检测到粉色{detection['class']}在左侧)")
+                            reason = f"(检测到粉色{detection['class']}在左侧)" if detection is not None and 'class' in detection else "(检测到目标在左侧)"
+                            self.switch_camera("network_0", reason)
                         elif position == "right" and len(self.network_cameras) > 1:
-                            self.switch_camera("network_1", f"(检测到粉色{detection['class']}在右侧)")
+                            reason = f"(检测到粉色{detection['class']}在右侧)" if detection is not None and 'class' in detection else "(检测到目标在右侧)"
+                            self.switch_camera("network_1", reason)
                     
                     last_detection_result = (detection, position)
             else:

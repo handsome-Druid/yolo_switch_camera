@@ -1,0 +1,14 @@
+{
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "pythonVersion": "3.8",
+      "extraPaths": [
+        "./camera",
+        "./ultralytics"
+      ]
+    }
+  ],
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": false
+}
